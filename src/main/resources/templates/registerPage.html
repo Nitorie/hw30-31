@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{base}" lang="en">
+<title layout:fragment="title">Index</title>
+<body>
+
+<div layout:fragment="content">
+    <p> Enter your name</p>
+<input type = "text" placeholder="your first name" required>
+    <p>
+    <input type = text placeholder="your last name" required>
+    </p>
+    <p> Choice your gender :</p>
+    <label for = "Man"><input
+            id = "Man"
+            type = radio
+            name = "RadioButtons">
+        Man</label>
+    <label for = "Woman"><input
+            id = "Woman"
+            type = radio
+            name = "RadioButtons">
+        Woman</label>
+    <p>
+        <a href="homePage.html">
+            <button type="button">Register</button>
+        </a>
+    </p>
+    <script src="/js/index.js" defer></script>
+</div>
+</body>
+</html>
